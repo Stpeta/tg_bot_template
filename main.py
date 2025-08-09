@@ -5,16 +5,6 @@ from aiogram import Bot, Dispatcher
 from config_data.config import Config, load_config
 from handlers.handlers_other import other_router
 from handlers.handlers_player import user_router
-from middlewares.inner import (
-    FirstInnerMiddleware,
-    SecondInnerMiddleware,
-    ThirdInnerMiddleware,
-)
-from middlewares.outer import (
-    FirstOuterMiddleware,
-    SecondOuterMiddleware,
-    ThirdOuterMiddleware,
-)
 
 # Настраиваем базовую конфигурацию логирования
 logging.basicConfig(
@@ -48,4 +38,6 @@ async def main() -> None:
     await dp.start_polling(bot)
 
 
-asyncio.run(main())
+if __name__ == "__main__":
+    asyncio.run(main())
+    logger.info("Bot started successfully.")

@@ -1,7 +1,3 @@
 LEXICON_EN: dict[str, str] = {
-    '/start': 'Привет!\n\nЯ эхо-бот для демонстрации работы миддлварей!\n\n'
-              'Если хотите - можете мне что-нибудь прислать',
-    'no_echo': 'Данный тип апдейтов не поддерживается '
-               'методом send_copy',
-    'button_pressed': 'Вы нажали кнопку!'
+    "/about": "Hello! I am your personal assistant bot.",
 }
